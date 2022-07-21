@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #73706C;
+}
+
+body header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 15rem;
+    background-color: #FFFFFF;
+}
+
+body header a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: #73706C;
+}
+
+body header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50vw;
+}
+
+body header nav ul li {
+    margin-right: 2rem;
+    list-style-type: none;
+}
+
+body header nav ul li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #73706C;
+}
+
+main .container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    padding: 3rem;
+    width: 25vw;
+}
+
+main .container section h2,
+main .container section .color {
+    margin-bottom: 1.25rem;
+}
+
+main .container section #button {
+    align-self: center;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    background-color: #c8c6c3;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+/* ! --- ESTADOS ACTIVOS --- */
+
+body header a:hover,
+body header nav ul li a:hover {
+    color: #db871a;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+main .container section #button:hover {
+    background-color: #73706C;
+    color: #F2F0EB;
+    opacity: 80%;
+    transition: all 0.5s linear;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
